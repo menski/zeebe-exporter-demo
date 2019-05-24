@@ -27,7 +27,7 @@ mvn archetype:generate -DgroupId=io.zeebe
 </dependency>
 ```
 
-3. Rename the file `src/main/java/io.zeebe/App.java` to `DemoExporter.java`, then edit it and import the `Exporter` interface:
+3. Rename the file `src/main/java/io/zeebe/App.java` to `DemoExporter.java`, then edit it and import the `Exporter` interface:
 
 ```java
 import io.zeebe.exporter.api.spi.Exporter;
@@ -37,7 +37,6 @@ import io.zeebe.exporter.api.spi.Exporter;
 
 ```java
 public class DemoExporter implements Exporter {
-{
 ```
 
 5. If your IDE supports it, use code completion to implement the methods you need to implement the `Exporter`:
